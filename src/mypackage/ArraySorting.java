@@ -4,7 +4,6 @@ public class ArraySorting {
 
 	public static void main(String[] args) {
 
-		
 		int[] arr = { 45, 87, 39, 32, 93, 86, 12, 44, 75, 50 };
 		int arrLength = arr.length;
 
@@ -16,7 +15,7 @@ public class ArraySorting {
 
 		// Swap the values around to put them ascending order.
 		
-		int temp = arr[0];
+		int temp = arr[0]; // initialize to first array element
 		for (int i = 0; i < arrLength; i++)
 		{
 			for (int j = i; j < arrLength; j++)
@@ -27,22 +26,16 @@ public class ArraySorting {
 					temp = arr[j]; // current lowest num
 					arr[j] = arr[i];
 					arr[i] = temp;
-					
 				}
 			}
 		}
 		
-
 		// Display the values again, now (hopefully) sorted.
 		System.out.print("after : ");
 		for ( int i=0; i<arrLength; i++ )
 			System.out.print( arr[i] + " " );
 		System.out.println();
 		
-		
-		
-		
-
 	}
 
 }
